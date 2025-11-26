@@ -17,7 +17,7 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(ImmersiveTechnology.MOD_ID);
 
-    public static final DeferredBlock<Block> SALT_BLOCK = registerBlock("salt_block",
+    public static final DeferredBlock<Block> REINFORCED_COKE_BRICK = registerBlock("reinforced_coke_brick",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3.0F, 3.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
