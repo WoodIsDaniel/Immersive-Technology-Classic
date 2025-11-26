@@ -23,8 +23,8 @@ public class ModBlocks {
                     .strength(3.0F, 3.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<SlabBlock> REINFORCED_COKE_BRICK_SLAB = registerBlock("reinforced_coke_brick_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
-
+            () -> new SlabBlock(BlockBehaviour.Properties.of()
+                    .strength(3.0F, 3.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock (String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -8,6 +8,7 @@ import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.woodisdaniel.immersivetechnology.common.block.ModBlocks;
+import org.woodisdaniel.immersivetechnology.common.fluid.ModFluids;
 import org.woodisdaniel.immersivetechnology.common.item.ModItems;
 import org.woodisdaniel.immersivetechnology.ImmersiveTechnology;
 
@@ -25,7 +26,8 @@ public class ModCreativeModeTabs {
                         //output.accept(Items.WOODEN_SWORD);
                         output.accept(ModBlocks.REINFORCED_COKE_BRICK);
                         output.accept(ModBlocks.REINFORCED_COKE_BRICK_SLAB);
-                        output.accept(ModItems.SALT);;
+                        output.accept(ModItems.SALT);
+                        output.accept(ModFluids.DISTILLED_WATER_BUCKET.get());
 
                     }).build());
 

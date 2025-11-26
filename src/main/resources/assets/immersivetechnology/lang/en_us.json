@@ -2,5 +2,6 @@
   "creativetab.immersivetechnology.immersivetechnology_items": "Immersive Technology",
   "block.immersivetechnology.reinforced_coke_brick": "Reinforced Coke Brick",
   "block.immersivetechnology.reinforced_coke_brick_slab": "Reinforced Coke Brick Slab",
-  "item.immersivetechnology.salt": "Salt"
+  "item.immersivetechnology.salt": "Salt",
+  "item.immersivetechnology.distilled_water_bucket": "Distilled Water Bucket"
 }

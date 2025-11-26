@@ -18,6 +18,7 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.woodisdaniel.immersivetechnology.common.block.ModBlocks;
+import org.woodisdaniel.immersivetechnology.common.fluid.ModFluids;
 import org.woodisdaniel.immersivetechnology.common.item.ModItems;
 import org.woodisdaniel.immersivetechnology.common.ModCreativeModeTabs;
 
@@ -41,6 +42,8 @@ public class ImmersiveTechnology {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModFluids.register(modEventBus);
+        modEventBus.addListener(this::addCreative);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
