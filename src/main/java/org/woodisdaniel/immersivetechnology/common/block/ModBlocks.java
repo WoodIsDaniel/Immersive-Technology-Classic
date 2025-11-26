@@ -10,6 +10,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.woodisdaniel.immersivetechnology.ImmersiveTechnology;
 import org.woodisdaniel.immersivetechnology.common.item.ModItems;
+import net.minecraft.world.level.block.*;
 
 import java.util.function.Supplier;
 
@@ -20,6 +21,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> REINFORCED_COKE_BRICK = registerBlock("reinforced_coke_brick",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3.0F, 3.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<SlabBlock> REINFORCED_COKE_BRICK_SLAB = registerBlock("reinforced_coke_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock (String name, Supplier<T> block) {

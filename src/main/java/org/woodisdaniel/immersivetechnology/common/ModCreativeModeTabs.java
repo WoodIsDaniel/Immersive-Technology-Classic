@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
 
                         //output.accept(Items.WOODEN_SWORD);
                         output.accept(ModBlocks.REINFORCED_COKE_BRICK);
+                        output.accept(ModBlocks.REINFORCED_COKE_BRICK_SLAB);
                         output.accept(ModItems.SALT);;
 
                     }).build());

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "immersivetechnology:block/reinforced_coke_brick_slab"
+    },
+    "type=double": {
+      "model": "immersivetechnology:block/reinforced_coke_brick"
+    },
+    "type=top": {
+      "model": "immersivetechnology:block/reinforced_coke_brick_slab_top"
+    }
+  }
+}
