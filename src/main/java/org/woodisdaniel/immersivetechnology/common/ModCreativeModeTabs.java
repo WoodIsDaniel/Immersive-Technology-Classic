@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
 
                         //output.accept(Items.WOODEN_SWORD);
+                        output.accept(ModBlocks.ITEM_TRASH_CAN);
                         output.accept(ModBlocks.REINFORCED_COKE_BRICK);
                         output.accept(ModBlocks.REINFORCED_COKE_BRICK_SLAB);
                         output.accept(ModItems.SALT);
