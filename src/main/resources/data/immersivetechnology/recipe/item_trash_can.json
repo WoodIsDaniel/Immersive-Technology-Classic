@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:chest"
+    },
+    "X": {
+      "tag": "c:plates/iron"
+    },
+    "Y": {
+      "tag": "c:sheetmetals/iron"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X#X",
+    " Y "
+  ],
+  "result": {
+    "count": 1,
+    "id": "immersivetechnology:item_trash_can"
+  }
+}

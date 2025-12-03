@@ -19,7 +19,7 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ImmersiveTechnology.MOD_ID);
 
     public static final Supplier<CreativeModeTab> IMMERSIVETECHNOLOGY_TAB = CREATIVE_MODE_TAB.register("immersivetechnology_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SALT.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ITEM_TRASH_CAN.get()))
                     .title(Component.translatable("creativetab.immersivetechnology.immersivetechnology_items"))
                     .displayItems((itemDisplayParameters, output) -> {
 

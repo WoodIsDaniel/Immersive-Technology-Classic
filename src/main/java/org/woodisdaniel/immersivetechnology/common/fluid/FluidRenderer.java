@@ -31,7 +31,7 @@ public class FluidRenderer {
             @Override
             public int getTintColor() {
 
-                return 0xFF00FFFF;
+                return 0x7079E0;
             }
         }, ModFluids.DISTILLED_WATER_TYPE.get());
     }

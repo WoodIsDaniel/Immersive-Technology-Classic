@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="GPL-3.0"
+
+[[mods]]
+modId="immersivetechnology"
+version="1.8.95"
+displayName="Immersive Technology"
+authors="WoodIsDaniel, tgstyle"
+description='''
+Immersive Technology for 1.21.1.\nForked.
+'''
+
+# Dependency for Immersive Engineering
+[[dependencies.immersivetechnology]]
+modId = "immersiveengineering"
+type = "required"
+# You MUST replace ${ie_version} with the actual number
+versionRange = "[12.4.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# Dependency for Minecraft
+[[dependencies.immersivetechnology]]
+modId="minecraft"
+type="required"
+# You MUST replace ${minecraft_version_range} with the actual numbers
+versionRange="[1.21.1, 1.22)"
+ordering="NONE"
+side="BOTH"

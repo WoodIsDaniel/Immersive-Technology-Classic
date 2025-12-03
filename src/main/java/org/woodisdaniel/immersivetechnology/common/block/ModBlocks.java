@@ -20,11 +20,11 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> REINFORCED_COKE_BRICK = registerBlock("reinforced_coke_brick",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.NETHER_BRICKS)));
 
     public static final DeferredBlock<SlabBlock> REINFORCED_COKE_BRICK_SLAB = registerBlock("reinforced_coke_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of()
-                    .strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.NETHER_BRICKS)));
 
     public static final DeferredBlock<Block> ITEM_TRASH_CAN = registerBlock("item_trash_can",
             () -> new ItemTrashCanBlock(BlockBehaviour.Properties.of().noOcclusion()
