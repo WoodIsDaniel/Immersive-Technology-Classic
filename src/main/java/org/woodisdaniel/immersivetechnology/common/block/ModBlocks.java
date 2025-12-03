@@ -9,7 +9,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.woodisdaniel.immersivetechnology.ImmersiveTechnology;
-import org.woodisdaniel.immersivetechnology.common.block.entity.ItemTrashCanBlock;
 import org.woodisdaniel.immersivetechnology.common.item.ModItems;
 import net.minecraft.world.level.block.*;
 
@@ -21,14 +20,18 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> REINFORCED_COKE_BRICK = registerBlock("reinforced_coke_brick",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3.0F, 3.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<SlabBlock> REINFORCED_COKE_BRICK_SLAB = registerBlock("reinforced_coke_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of()
-                    .strength(3.0F, 3.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> ITEM_TRASH_CAN = registerBlock("item_trash_can",
-            () -> new ItemTrashCanBlock(BlockBehaviour.Properties.of().noOcclusion()));
+            () -> new ItemTrashCanBlock(BlockBehaviour.Properties.of().noOcclusion()
+                    .strength(5F, 6.0F)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+            ));
 
     private static <T extends Block> DeferredBlock<T> registerBlock (String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
