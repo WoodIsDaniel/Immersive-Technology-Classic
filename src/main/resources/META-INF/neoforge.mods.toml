@@ -26,5 +26,5 @@ modId="minecraft"
 type="required"
 # You MUST replace ${minecraft_version_range} with the actual numbers
 versionRange="[1.21.1, 1.22)"
-ordering="NONE"
+ordering="AFTER"
 side="BOTH"

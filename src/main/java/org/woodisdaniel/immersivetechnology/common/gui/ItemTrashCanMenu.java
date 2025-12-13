@@ -1,8 +1,7 @@
-package org.woodisdaniel.immersivetechnology.client.gui;
+package org.woodisdaniel.immersivetechnology.common.gui;
 
 import org.woodisdaniel.immersivetechnology.common.block.ModBlocks;
 import org.woodisdaniel.immersivetechnology.common.block.entity.ItemTrashCanBlockEntity;
-import org.woodisdaniel.immersivetechnology.client.gui.ModMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;

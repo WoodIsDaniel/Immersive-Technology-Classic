@@ -1,5 +1,9 @@
-package org.woodisdaniel.immersivetechnology.client.gui;
+package org.woodisdaniel.immersivetechnology.common.gui;
 
+import blusunrize.immersiveengineering.api.Lib;
+import blusunrize.immersiveengineering.common.blocks.multiblocks.logic.FermenterLogic;
+import blusunrize.immersiveengineering.common.gui.FermenterMenu;
+import blusunrize.immersiveengineering.common.register.IEMenuTypes;
 import org.woodisdaniel.immersivetechnology.ImmersiveTechnology;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -9,6 +13,9 @@ import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
 import net.neoforged.neoforge.network.IContainerFactory;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.woodisdaniel.immersivetechnology.common.multiblock.logic.DistillerLogic;
+
+import static blusunrize.immersiveengineering.common.register.IEMenuTypes.registerMultiblock;
 
 public class ModMenuTypes {
     public static final DeferredRegister<MenuType<?>> MENUS =
@@ -16,6 +23,9 @@ public class ModMenuTypes {
 
     public static final DeferredHolder<MenuType<?>, MenuType<ItemTrashCanMenu>> ITEM_TRASH_CAN_MENU =
             registerMenuType("item_trash_can_menu", ItemTrashCanMenu::new);
+
+    public static final IEMenuTypes.MultiblockContainer<DistillerLogic.State, DistillerMenu> DISTILLER =
+            registerMultiblock("distiller_menu", DistillerMenu::makeServer, DistillerMenu::makeClient);
 
     private static <T extends AbstractContainerMenu>DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(String name,
                                                                                                               IContainerFactory<T> factory) {

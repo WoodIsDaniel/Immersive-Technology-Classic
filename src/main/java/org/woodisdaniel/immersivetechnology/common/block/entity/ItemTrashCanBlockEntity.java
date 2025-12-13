@@ -15,7 +15,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import org.jetbrains.annotations.Nullable;
-import org.woodisdaniel.immersivetechnology.client.gui.ItemTrashCanMenu;
+import org.woodisdaniel.immersivetechnology.common.gui.ItemTrashCanMenu;
 
 public class ItemTrashCanBlockEntity extends BlockEntity implements MenuProvider {
 

@@ -112,14 +112,14 @@ configurations {
 }
 
 dependencies {
-    implementation "curse.maven:immersive-engineering-231951:6733669"
+    implementation "blusunrize.immersiveengineering:ImmersiveEngineering:1.21.1-12.4.2-194"
+    implementation "blusunrize.immersiveengineering:ImmersiveEngineering:1.21.1-12.4.2-194:datagen"
+    implementation "blusunrize.immersiveengineering:ImmersiveEngineering:1.21.1-12.4.2-194:api"
 
     repositories {
         maven {
-            url "https://cursemaven.com"
-            content {
-                includeGroup "curse.maven"
-            }
+            name = "BlameJared"
+            url = "https://maven.blamejared.com"
         }
     }
 

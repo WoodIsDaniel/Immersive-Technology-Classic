@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
+import org.woodisdaniel.immersivetechnology.common.gui.ItemTrashCanMenu;
 
 public class ItemTrashCanScreen extends AbstractContainerScreen<ItemTrashCanMenu> {
     private static final ResourceLocation GUI_TEXTURE =
