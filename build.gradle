@@ -116,10 +116,20 @@ dependencies {
     implementation "blusunrize.immersiveengineering:ImmersiveEngineering:1.21.1-12.4.2-194:datagen"
     implementation "blusunrize.immersiveengineering:ImmersiveEngineering:1.21.1-12.4.2-194:api"
 
+    implementation "malte0811:DualCodecs:0.1.2"
+
+    compileOnly "mezz.jei:jei-1.21.1-neoforge-api:19.21.1.248"
+    localRuntime "mezz.jei:jei-1.21.1-neoforge:19.21.1.248"
+
     repositories {
         maven {
             name = "BlameJared"
             url = "https://maven.blamejared.com"
+        }
+        maven {
+            // For JEI
+            name = "ModMaven"
+            url = "https://modmaven.dev"
         }
     }
 

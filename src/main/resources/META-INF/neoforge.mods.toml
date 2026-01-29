@@ -15,7 +15,6 @@ Immersive Technology for 1.21.1.\nForked.
 [[dependencies.immersivetechnology]]
 modId = "immersiveengineering"
 type = "required"
-# You MUST replace ${ie_version} with the actual number
 versionRange = "[12.4.0,)"
 ordering = "AFTER"
 side = "BOTH"
@@ -24,7 +23,6 @@ side = "BOTH"
 [[dependencies.immersivetechnology]]
 modId="minecraft"
 type="required"
-# You MUST replace ${minecraft_version_range} with the actual numbers
 versionRange="[1.21.1, 1.22)"
 ordering="AFTER"
 side="BOTH"
