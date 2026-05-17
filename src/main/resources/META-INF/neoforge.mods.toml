@@ -8,8 +8,10 @@ version="1.8.95"
 displayName="Immersive Technology"
 authors="WoodIsDaniel, tgstyle"
 description='''
-Immersive Technology for 1.21.1.\nForked.
+Immersive Technology for 1.21.1.
+Forked.
 '''
+logoFile="icon.png"
 
 # Dependency for Immersive Engineering
 [[dependencies.immersivetechnology]]
@@ -23,6 +25,14 @@ side = "BOTH"
 [[dependencies.immersivetechnology]]
 modId="minecraft"
 type="required"
-versionRange="[1.21.1, 1.22)"
+versionRange="[1.21, 1.21.1)"
+ordering="AFTER"
+side="BOTH"
+
+# Dependency for Neoforge
+[[dependencies.novanillaprogression]]
+modId="neoforge"
+type="required"
+versionRange="[21.0.167,)"
 ordering="AFTER"
 side="BOTH"
